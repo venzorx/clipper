@@ -1,0 +1,96 @@
+AUTOCLIPPER PRO — SIMPLE USER GUIDE
+====================================
+
+WHAT THIS APP DOES
+AutoClipper Pro is intended to be a Windows desktop app. It analyses a source video you own or are authorized to use, finds coherent moments, writes original English commentary, generates narration with a built-in English AI voice, edits vertical clips, creates captions and publishing metadata, performs rights/quality checks, and exports organized files.
+
+The target is up to 3 strong clips per day, not a guaranteed quota. AI cannot guarantee viral views, no copyright claims or monetization approval.
+
+1. FIRST-TIME SETUP
+-------------------
+1. Run AutoClipper-Setup.exe after a release build is provided.
+2. Open AutoClipper Pro from the desktop shortcut or Start menu.
+3. Follow the setup wizard; let it detect CPU, RAM, GPU, storage and FFmpeg.
+4. Download local AI models when prompted. Review model sizes and licences. Downloads are cached locally.
+5. Choose workspace and export folder (example: Videos\AutoClipper_Exports).
+6. Set channel name, niche and branding.
+7. Keep narration language as English.
+8. Preview built-in narrator voices and choose Adaptive Multi-Voice or Consistent Channel Voice.
+9. Confirm the dashboard says required local models are ready.
+
+The default local AI stack has no recurring per-inference API charge. Electricity, internet/model downloads, storage and optional platform API access are separate.
+
+2. CREATE CLIPS FROM A LOCAL VIDEO
+----------------------------------
+1. Open the app and choose Create from Local File.
+2. Select a video you own or have permission to edit and publish.
+3. Open Rights & Permission and attach/confirm evidence covering the intended platforms, edits and commercial use where relevant.
+4. Select YouTube Shorts, Instagram Reels or both.
+5. Leave Maximum Clips at 3 for the normal workflow.
+6. Click Create Shorts Pack.
+7. Follow the processing stages. Open job details to see transcript, candidates and diagnostics.
+8. Review each clip's PASS / NEEDS REVIEW / BLOCKED status and preview.
+9. Export PASS clips. Resolve NEEDS REVIEW manually. Do not publish BLOCKED items.
+
+Fewer than 3 clips may be returned when a source lacks three strong moments. The app must not invent a clip to fill the quota.
+
+3. AUTO DISCOVER AND LIVE MONITOR
+---------------------------------
+These depend on official platform integrations enabled in the actual build.
+1. Open Settings > Platform Connections.
+2. Connect only accounts/API credentials you control and are authorized to use.
+3. Review requested scopes and permissions.
+4. Open Auto Discover and choose a category (initial preset: GTA 6).
+5. Check source details, media access and permission status.
+6. Discovery does not grant permission to download or republish a creator's content. Attach valid authorization first.
+7. Chat velocity is available only where an official supported live-chat API exposes it. Ended VODs may not provide historical chat data.
+8. If media/chat access is unavailable, use an authorized local file. Never bypass platform restrictions.
+
+4. SCRIPTS AND VOICE
+--------------------
+AI writes a truthful hook, minimal context, original explanation/analysis and payoff. Kokoro local TTS generates English narration. Adaptive Voice chooses among tested built-in English profiles; Consistent Channel Voice maintains one voice. The default app does not clone your voice or imitate the streamer. TTS failures must be shown clearly.
+
+5. EXPORTED FILES
+-----------------
+Each PASS clip folder may contain:
+- YouTube_Shorts.mp4 and Instagram_Reel.mp4
+- YouTube_Cover.png and Instagram_Cover.png
+- YouTube_Metadata.txt / .json
+- Instagram_Caption.txt, Instagram_Hashtags.txt, Instagram_AltText.txt
+- Captions.srt / Captions.vtt
+- Source_Attribution.txt, Rights_Manifest.json, QA_Report.html
+- Preview.jpg, Commentary_Script.txt, Narration_Metadata.json
+
+Use Export Manager > Open Folder to locate files.
+
+6. PUBLISHING
+-------------
+Default mode is export-only. Upload manually using your own account. Check audience, visibility, synthetic-media disclosure, attribution and platform settings yourself. A generated file is not platform approval. Public auto-publishing is not enabled by default.
+
+7. TROUBLESHOOTING
+------------------
+MODEL_NOT_INSTALLED: Settings > Models > Download.
+DISK_SPACE_LOW: free space or choose another drive; do not delete original files.
+NO_PERMISSION_EVIDENCE: attach valid rights evidence; credit alone is not permission.
+SOURCE_ACCESS_NOT_SUPPORTED: use a creator-provided authorized file.
+API_AUTH_REQUIRED: connect platform or use local mode.
+API_QUOTA_EXCEEDED: wait for quota reset or use local mode.
+CHAT_SIGNAL_UNAVAILABLE: chat data is unavailable; do not invent chat spikes.
+LANGUAGE_MISMATCH: source is not sufficiently English; review or disable narration.
+TTS_GENERATION_FAILED: retry voice stage or omit narration only if final edit still passes QA.
+RENDER_FAILED: inspect job details and resume from last successful stage.
+QA_FAILED: read exact reason; do not publish until resolved.
+
+Export a diagnostic report from Settings > Diagnostics. Check it contains no secrets before sharing.
+
+8. DAILY ROUTINE
+----------------
+1. Open AutoClipper Pro.
+2. Choose an authorized local source or enabled authorized discovery/live source.
+3. Confirm permission evidence.
+4. Click Create Shorts Pack.
+5. Review up to three strongest clips and QA statuses.
+6. Export approved files.
+7. Publish manually after checking platform settings.
+
+The application handles transcription, script writing, English voice generation, captions, video editing and metadata. You remain responsible for authorization, final review and publishing.
